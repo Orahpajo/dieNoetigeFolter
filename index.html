@@ -42,6 +42,26 @@
             font-weight: bold;
             background-color: #44a2fd;
         }
+
+        .collapsible {
+            padding: 0;
+            color: #3a9cdb;
+            cursor: pointer;
+            border: none;
+            background-color: #ffffff;
+            text-align: left;
+            font-family: "Times New Roman",serif;
+            font-size: 16px;
+        }
+
+        .active, .collapsible:hover {
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
@@ -58,13 +78,37 @@
         Adele 2010</p>
     
     <h2>Rollen:</h2>
-    
+
     <p>Menschen</p>
-    
-    <p>SVEN Mitte 30, Künstler<br>
-        BAQIL Ende 30, Künstler<br>
-        EVA Anfang 40, Kuratorin<br>
-        HARK Anfang 30, Forscher</p>
+
+
+    <button type="button" class="collapsible">SVEN Mitte 30, Künstler</button>
+    <div class="content">
+        <h3>Fakten</h3>
+        <ul>
+            <li>Hark: Der ist der schlimmste</li>
+            <li>Eva:  Familie, Monogamie, Werte, Spiel mit dem Spießigen, was seine Fans ja lieben...  immer gleich
+                eine Verlobte. Süchtig nach Liebe. </li>
+            <li>Kann beziehungen trotzdem nicht halten.</li>
+            <li>Eva: Chaot.  Der hat Flüge verpennt und Aufträge und Einladungen und Verpﬂichtungen, sich aber immer alles draufgepackt, groteske Selbstüberschätzung</li>
+            <li>Hat Doro bei einer Vernisage ausgestochen, und ihren platz bekommen.</li>
+            <li>Hat Doro ausgenutzt. Mit ihr geschlafen, obwohl er wusste dass sie mehr will und er keine Feste Beziehung mit ihr wollte.</li>
+            <li>Behauptet Doro hätte auch keine Familie mit ihm gewollt.</li>
+        </ul>
+        <h3>Interpretation</h3>
+        <ul>
+            <li>Hat sein leben lang immer das bekommen was wer wollte.</li>
+            <li>Seine Eltern haben ihm alles bezahlt, waren aber nie eine Echte Familie. </li>
+            <li>Jetzt ist er auf der Suche nach der perfekten Spiesser Familie</li>
+            <li>Versteckt sich hinter der Ironie daran.</li>
+            <li>Weil er immer alles bekommen hat, denkt er er kann sich immer alles Nehmen, ohne Rücksicht auf die Gefüle anderer.</li>
+        </ul>
+    </div>
+    <br>
+    BAQIL Ende 30, Künstler<br>
+    EVA Anfang 40, Kuratorin<br>
+    HARK Anfang 30, Forscher
+
     
     <p>Andere</p>
     
@@ -79,7 +123,7 @@
     
     <p>(ln der Mitte der Anlage steht ein Laufband mit einem Laserscanner am Ende, dahinter ein beweglicher Stuhl und
         eine digitale Kasse, wie im Lebensmitteldiscounter. Etwas rechts davon ein Bock mit Fesseln. Andere Geräte hier
-        und da; ein OP-Tisch, Kamera, Schirme. Die Menschen sitzen ﬁxiert in ihren vier Möbeln. Sie schlafen. Das Bild
+        und da; ein OP-Tisch, Kamera, Schirme. Die Menschen sitzen fixiert in ihren vier Möbeln. Sie schlafen. Das Bild
         ist mehrfach vorhanden, teils schläft es auch. Stier und Widder arbeiten am Ablauf)</p>
     
     <p><span class="stier">STIER:</span> <span class="dialog"> Ich weiß, du ekelst dich. Hast fast gekotzt, als wir dem mit dem Bunsenbrenner die Fußsohlen verbrannt
@@ -103,7 +147,7 @@
         Wie viele Aufnahmen pro Sekunde macht das System! Es gibt Experimente. Kürzeste Stimuli, hundert Millisekunden
         und dergleichen. Aber das Interessantere ist: Wie sieht es mit dem Erleben sonst aus? Sind Gefühlswahrnehmungen,
         Wünsche, Ängste auch in Päckchen unterteilt? Da haben wir dann dieses Programm ausgeknobelt, der Hark, mein
-        Neurowissenschaftler, und ich. Ein ﬁeses kleines Ding, das immer schneller immer schlimmer wird, eine Kaskade.
+        Neurowissenschaftler, und ich. Ein fieses kleines Ding, das immer schneller immer schlimmer wird, eine Kaskade.
         Superwerkzeug, um eine Funktion mit Richtungen und Längen und Größen für Veränderungen in einem Sobolewraum zu
         verfolgen. Das brauchst du zum Beispiel für Statistik, also für das Verhalten von großen Menschengruppen. Und
         für Minimalwerte, kürzester Weg, kleinster Energieaufwand. Ich habe dann nach den Berechnungen der Kaskade
@@ -241,7 +285,7 @@
         Liebesgeschichten, genau wie im Parlament oder im Krieg. Kann ja gar nicht so klappen.</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Hallo?</span></p>
     <p><span class="bild">BILD:</span> <span class="dialog"> Die Menschheit ist verpasst. Wir sind dran vorbei gerutscht. Die ungleichzeitige Entwicklung hat uns
-        geﬁckt.</span></p>
+        gefickt.</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Hallo?</span></p>
     <p><span class="baqil">BAQIL:</span> <span class="dialog"> Mwhoo... rrgharrghh... Wa... Hallo, was, hallo?</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Baqil? Bist du das?</span></p>
@@ -359,7 +403,7 @@
         darunter liegt eine algebraische Struktur von Gesichtstransformationen mit beliebig gewählten Operatoren. Nicht
         leicht zu programmieren, es wird ja selten ein emotionaler Zustand alleine und isoliert ausgedrückt.</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Klingt kompliziert.</span></p>
-    <p><span class="baqil">BAQIL:</span> <span class="dialog"> Das ist einer von den ﬁesen Witzen hier, dass der Stier dieses
+    <p><span class="baqil">BAQIL:</span> <span class="dialog"> Das ist einer von den fiesen Witzen hier, dass der Stier dieses
         facial-recognition- performance Ding von mir übernommen hat. Aus meiner Computerkunst. Und Hark und... Sven...
         Und. (Schock)</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Baqil? Alles okay?</span></p>
@@ -379,7 +423,7 @@
         München und dann, als das kaputtging... BAQlL: Aber mit Doro war er nie verlobt?</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Doro war immer seine Geliebte, so neben den Weibern. Sie hat ja gern gebeichtet, ich wollte das aber nicht
         hören. Als Sven mit der ersten zusammen war, da sind sie ja dann miteinander ins Bett, Sven und Doro, und dann
-        gab es ein paar Monate diesen Kleinkrieg, wie geht das nun aus, er fährt es die Verlobte von Sven, gibt es
+        gab es ein paar Monate diesen Kleinkrieg, wie geht das nun aus, erfährt es die Verlobte von Sven, gibt es
         Krach, trennen die sich? Andererseits: Kannst du dir das vorstellen, Doro mit Kindern?</span></p>
     <p><span class="baqil">BAQIL:</span> <span class="dialog"> Doro ist tot.</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Schon, aber, entschuldige. Doro und Sven und Reihenhaus, nein. Am Ende hat er Doro wohl eine Mail
@@ -397,7 +441,7 @@
     <p><span class="baqil">BAQIL:</span> <span class="dialog"> Eva. Bitte. Und dann'</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Dann ist Doro erstmal verschwunden, zwei Jahre. Nach dieser Trennung.</span></p>
     <p><span class="baqil">BAQIL:</span> <span class="dialog"> Weiß ich, weil ich der einzige aus unserm Kreis war, zu dem sie noch Kontakt hatte.</span></p>
-    <p><span class="eva">EVA:</span> <span class="dialog"> Da ﬁng das an mit euch, oder?</span></p>
+    <p><span class="eva">EVA:</span> <span class="dialog"> Da fing das an mit euch, oder?</span></p>
     <p><span class="baqil">BAQIL:</span> <span class="dialog"> Ja. Aber da sind wir noch nicht. Wir sind bei Sven. Was ist dann passiert?</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Na, da haben sich kurz danach Sven und sei ne Braut auch getrennt.</span></p>
     <p><span class="baqil">BAQIL:</span> <span class="dialog"> Die, nach deren Liebe er süchtig war?</span></p>
@@ -417,16 +461,16 @@
     <p><span class="baqil">BAQIL:</span> <span class="dialog"> Wie geht es denn?</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Woher soll ich das wissen? Die Welt ist zusammengebrochen und ich wurde entführt und operiert und werde
         jetzt ferngesteuert und von dir befragt und.</span></p>
-    <p><span class="baqil">BAQIL:</span> <span class="dialog"> Bleib liegen, ja? Ich wollte nur wissen: Dei ne Meinung von der Sache mit Sven und Doro war schlecht und
+    <p><span class="baqil">BAQIL:</span> <span class="dialog"> Bleib liegen, ja? Ich wollte nur wissen: Deine Meinung von der Sache mit Sven und Doro war schlecht und
         wurde immer schlechter?</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Das kannst du aber singen.</span></p>
     <p><span class="baqil">BAQIL:</span> <span class="dialog"> Und das hast du weder ihr noch ihm gesagt?</span></p>
-    <p><span class="eva">EVA:</span> <span class="dialog"> Ihr was sagen, was sie nicht hören will... wollte... du warst doch mit ihr zusammen. BAQll: Ja. Ich weiß,
-        was du meinst. Sie lädt einen zum Tanzen ein, aber man tanzt dann in einen Sturm. Und der Sturm ist sie.</span></p>
+    <p><span class="eva">EVA:</span> <span class="dialog"> Ihr was sagen, was sie nicht hören will... wollte... du warst doch mit ihr zusammen.
+    <p><span class="baqil">BAQIl:</span><span class="dialog">Ja. Ich weiß, was du meinst. Sie lädt einen zum Tanzen ein, aber man tanzt dann in einen Sturm. Und der Sturm ist sie.</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Poetisch... aber, ja, so ist das. So war das.</span></p>
     <p><span class="baqil">BAQIL:</span> <span class="dialog"> Ist nicht von mir. Ist von Lorde, ihrer Lieblings... (Schock)</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Baqil? Alles okay? </span></p>
-    <p><span class="baqil">BAQIL:</span> <span class="dialog"> Ja, ich... ja, ich hatte nur gerade einen... einen Stich in... der Stier ﬁndet
+    <p><span class="baqil">BAQIL:</span> <span class="dialog"> Ja, ich... ja, ich hatte nur gerade einen... einen Stich in... der Stier findet
         wohl wir driften zu weit vom Thema ab. Also, Sven...</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Der hat sich ständig überschätzt - als ob ein Chaot wie er das könnte, Familie. Der hat Flüge verpennt und
         Aufträge und Einladungen und Verpﬂichtungen, sich aber immer alles draufgepackt, groteske Selbstüberschätzung...
@@ -442,7 +486,7 @@
     <p><span class="baqil">BAQIL:</span> <span class="dialog"> Das... ah, fuck. (Schock)</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Baqil? Was ist los?</span></p>
     <p><span class="baqil">BAQIL:</span> <span class="dialog"> Er ist ungeduldig heute. Der... ah... Also. Eva. Hier die... es geht nicht um die Vorfälle, es geht nicht
-        um den Meurer und den Orangensaft. Es geht darum: Wieso hast du als Cheﬁn nicht deine Macht.</span></p>
+        um den Meurer und den Orangensaft. Es geht darum: Wieso hast du als Chefin nicht deine Macht.</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Was Macht, ich?</span></p>
     <p><span class="baqil">BAQIL:</span> <span class="dialog"> Ja Herrgott, jetzt stell dich nicht... so... Scheiße... (Schock)</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Baqil? Du machst mir Angst...</span></p>
@@ -512,9 +556,9 @@
         er da ganz uneitel und bescheiden nach seinen Gedanken sucht vor Publikum: das ist das Allerletzte, weil er ja
         trotzdem der Vortragende ist, da ja nicht alle gleichzeitig reden können, und sein unvorbereitetes Gestammel
         dann einfach Terror bedeutet, Geiselnahme, alle sind jetzt seiner Hilﬂosigkeit ausgeliefert. Das Publikum quälen
-        durch Chaos. Meine Frage war: Kann man das optimieren? Kann man das maximale Störpotential ﬁnden, um das
+        durch Chaos. Meine Frage war: Kann man das optimieren? Kann man das maximale Störpotential finden, um das
         Publikum so richtig zu foltern und zu zerbrechen? Welche Funktionen im Sobolewraum dieser ganzen
-        Sender-und-Empfänger-Scheiße muss ich knacken, wie kann ich die kleinsten Signaleinheiten ﬁnden und absetzen, um
+        Sender-und-Empfänger-Scheiße muss ich knacken, wie kann ich die kleinsten Signaleinheiten finden und absetzen, um
         eine bereits gestörte Abstimmung von Rahmenraten auf einander nur immer schneller immer weiter zu stören? Die
         Leute aufzuhetzen, das war ein kindischer Einfall. Sie dazu zu bringen, einander aus den wechselseitigen
         Zeitfenstern fürs Verstehen zu schütteln und zu schubsen, das ist viel zerstörerischer. Das kann man in sehr
@@ -528,10 +572,10 @@
     
     <p><span class="stier">STIER:</span> <span class="dialog"> (hat einen Kasten dabei mit Geräten, stellt ihn neben den Bock, dann gehen beide zur Kasse) Nimm ihn mal
         unten. Das Bein da, nimm's höher. Ich schwöre dir, das ist Absicht, dass er so schwer ist, dieser Mensch. Die
-        ganze Masse ist nichts als Trotz. (Beide arbeiten, bringen Baqil und Eva zurück zu ihren Sitzen, ﬁxieren sie
+        ganze Masse ist nichts als Trotz. (Beide arbeiten, bringen Baqil und Eva zurück zu ihren Sitzen, fixieren sie
         dort) Ja, schau nicht so. Ist mir alles klar, du findest es abscheulich, inklusive die Auswege, das schnelle
-        Gift, das langsame Gift, Herz und Hirn. Am Allerabscheulichsten ﬁndest du die Sache mit Sven. Die Stufe der
-        Angst, und eigentlich ﬁndest du jede Stufe im Ablauf zum Kotzen. Aber wenn du wirklich nicht mehr kannst, es
+        Gift, das langsame Gift, Herz und Hirn. Am Allerabscheulichsten findest du die Sache mit Sven. Die Stufe der
+        Angst, und eigentlich findest du jede Stufe im Ablauf zum Kotzen. Aber wenn du wirklich nicht mehr kannst, es
         gibt die zwei Röhrchen, nicht? Das schnelle Gift und das langsame Gift, für dich in Röhrchen, für die andern im
         Depot. Ich hab's dir gezeigt, in der Beobachtung, und das Fach ist nicht abgeschlossen. Du kannst es nehmen, ich
         kann es nehmen. Absolute Freiheit zum Ausstieg, an jedem Moment im Ablauf. Nimmst du das langsame, dann gehst du
@@ -591,7 +635,7 @@
         Kuscheleinladung. Bestreitest du das?</span></p>
     <p><span class="sven">SVEN:</span> <span class="dialog"> Wieso sollte ich bestreiten, was... he, was machst du?</span></p>
     <p><span class="stier">STIER:</span> <span class="dialog"> Ich zieh dir die Hosen runter. Gehört zum Ablauf.</span></p>
-    <p><span class="sven">SVEN:</span> <span class="dialog"> Was soll das sein, eine, was ist das, ﬁlmt ihr das?</span></p>
+    <p><span class="sven">SVEN:</span> <span class="dialog"> Was soll das sein, eine, was ist das, filmt ihr das?</span></p>
     <p><span class="stier">STIER:</span> <span class="dialog"> Hier, schau mal. Weißt du, was das ist?</span></p>
     <p><span class="sven">SVEN:</span> <span class="dialog"> Wie bitte? Also... Das ist ein Riesen… dildo, soll ich jetzt ohnmächtig werden?</span></p>
     <p><span class="stier">STIER:</span> <span class="dialog"> Klären wir gleich. Jetzt erst mal zurück: Sie kam dann, und du hast die Decke zurückgeschlagen und lagst
@@ -762,7 +806,7 @@
     <p><span class="hark">HARK:</span> <span class="dialog"> Vielleicht hättest du das tun sollen.</span></p>
     <p><span class="baqil">BAQIL:</span> <span class="dialog"> Danke auch für den Hinweis, Herr neurowissenschaftlicher Menschenmanipulator. Es war wie in einem
         Dampfkessel, dieser Druck in mir... ich konnte es ihr nicht zeigen. Aus Stolz vielleicht. Und weil ich dieses
-        Klischee so zum Kotzen ﬁnde, der unbeherrschte, der besitzergreifende arabische Mann. Ich habe gelitten wie ein
+        Klischee so zum Kotzen finde, der unbeherrschte, der besitzergreifende arabische Mann. Ich habe gelitten wie ein
         Hund. Und dann, nach einem Wochenende in Frankfurt, hatte ich genug, und habe ihr ihren ganzen Kram aus
         meiner... aus unserer Berliner Wohnung nach Frankfurt geschickt, kommentarlos, in Kisten. Und war nicht mehr zu
         erreichen. Aus.</span></p>
@@ -807,7 +851,7 @@
     <p><span class="eva">EVA:</span> <span class="dialog"> Stimmt, irgendwann hat sie es ja auch wirklich beendet.</span></p>
     <p><span class="hark">HARK:</span> <span class="dialog"> Wobei man fragen kann, ob sie den Mut gehabt hätte, es zu beenden, wenn Baqil nicht gegangen wäre.</span></p>
     <p><span class="baqil">BAQIL:</span> <span class="dialog"> Genau das hat sie zu mir gesagt: Ich konnte mich von dem· losreißen, von Sven, als mir klar wurde, so wie
-        mit Baqil wird es mit jedem laufen, solange ich auf Sven ﬁxiert bin. Und dann sagt sie: Ich will dir da auf
+        mit Baqil wird es mit jedem laufen, solange ich auf Sven fixiert bin. Und dann sagt sie: Ich will dir da auf
         keinen Fall reinreden. Wenn Pat für dich richtig ist, mach das. Andererseits, wenn ich richtig bin, viel Zeit
         haben wir nicht mehr.</span></p>
     <p><span class="eva">EVA:</span> <span class="dialog"> Meinst du, sie hat es damit angekündigt? Dass sie vorhat...</span></p>
@@ -900,7 +944,7 @@
         sofort. Auch wenn die Wahrscheinlichkeit, dass das passiert... ich hatte nicht an Baqil gedacht. Ich dachte,
         Sven würde vielleicht aus Trotz... oder Eva, aus Überforderung...</span></p>
     <p><span class="stier">STIER:</span> <span class="dialog"> Ich habe Eva schlafen geschickt. Nach dem Ablauf wacht sie auf. Er müsste demnächst durch sein.</span></p>
-    <p><span class="hark">HARK:</span> <span class="dialog"> Ich weiß gar nicht mehr, welche... wie ich das Szenario, das speziﬁsche...</span></p>
+    <p><span class="hark">HARK:</span> <span class="dialog"> Ich weiß gar nicht mehr, welche... wie ich das Szenario, das spezifische...</span></p>
     <p><span class="stier">STIER:</span> <span class="dialog"> Sie waren alle düster. Alle deine Entwürfe für den Ablauf.</span></p>
     <p><span class="hark">HARK:</span> <span class="dialog"> Sie waren realistisch.</span></p>
     <p><span class="stier">STIER:</span> <span class="dialog"> Ich verstehe es immer noch nicht. Was der Versuchsaufbau soll. Wieso du dich dem Ablauf mit ihnen zusammen
@@ -1035,10 +1079,27 @@
     <p><span class="doro">DORO:</span> <span class="dialog"> So. Ein Dreieck. Stier, ihr, ich. Was sagst du, Baqil? Nichts. Leider.
         Dass du tot bist, heißt, ich kann dich nicht um Entschuldigung bitten. Bleibt nur Eva. Hallo? Eva? Ich hätte
         einen fragen sollen, wie man dich weckt. Hark oder den Stier. Alleine krieg' ich nicht mal den Toten zum Kühl
-        fach. Zu schwer. Ich geh' nochmal in die Beobachtung. was meinst du? Vielleicht ﬁnde ich raus, wie ich dir
+        fach. Zu schwer. Ich geh' nochmal in die Beobachtung. was meinst du? Vielleicht finde ich raus, wie ich dir
         helfen kann. (fast ab, dann:) Das ist es nämlich, weißt du: Wenn man nicht mehr helfen kann, dann war's das.
         Warte mal eben. © Dietmar Dath 2019</span></p>
 </div>
+
+<script>
+    const coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            const content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
 </body>
 
 </html>
